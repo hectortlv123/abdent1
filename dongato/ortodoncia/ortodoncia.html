@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ortodoncia</title>
+    <link rel="stylesheet" href="ortodoncia.css">
+    <link rel="icon" href="../iconos/abdent icono.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Serif+Text:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gabarito:wght@400..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="preloader">
+        <img src="../LOGO_ABDENT.png" alt="Logo de la clínica">
+    </div>
+    <header>
+        <nav class="barra-navegacion">
+            
+            <div class="contenedor-nav" id="contenedor-nav">
+                <div class="contenedor-img-android">
+                        <button class="menu-toggle" onclick="toggleMenu()">
+                        <i class="fa-solid fa-grip-lines"></i>
+                    </button>
+                    <div class="logo-celular">
+                        <img src="../ABDENT_BLANCO.png" alt="logo-blanco">
+                    </div>
+                </div>
+                
+                <a href="../index.html">Inicio</a>
+                
+                <div class="menu">
+                    <a href="#" class="especialidades">Especialidades</a>
+                    <div class="menu-item">
+
+                        
+                        <a href="ortodoncia.html">Ortodoncia</a>
+                            
+                        
+
+                        <a href="../ortopedia-maxilar/ortopedia-maxilar.html">Ortopedia funcional de los Maxilares</a>
+                        <a href="../implantologia/implantologia.html">Implantologia 3D</a>
+                        <a href="../periodoncia/periodoncia.html">Periodoncia</a>
+                        <a href="../cirugia-bucal-maxilofacial/cirugia-bucal.html">Cirugía Bucal Maxilofacial</a>
+                        <a href="../odontopediatria/odontopediatria.html">Odontopediatría</a>
+                        <a href="../disfuncion-mandibular/disfuncion-mandibular.html">Disfunción Temporo Mandibular</a>
+                        <a href="../orofacial/orofacial.html">Dolor Orofacial</a>
+                        <a href="../bruxismo/bruxismo.html">Bruxismo</a>
+                        <a href="../rehabilitacion-oral/rehabilitacion-oral.html">Rehabilitación Oral</a>
+                        <a href="../endodoncia/endodoncia.html">Endodoncia</a>
+                    </div>
+                </div>
+                <a href="../blog/blog1/blog1.html">Blog</a>
+                <a class="logo"><img src="../ABDENT_BLANCO.png" alt=""></a>
+                
+                <a href="../contacto/contacto.html">Contacto</a>
+
+                 <div class="iconos-redes1">
+                    <a href="https://www.facebook.com/ABDent.Braulio"><img src="../iconos/Facebook.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://www.instagram.com/abdent.braulio/"><img src="../iconos/Instagram.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://www.tiktok.com/@abdent.braulio"><img src="../iconos/TikTok.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0"><img src="../iconos/Whatsapp.png" alt="error"style="height: 20px;"></a>
+                    
+                </div>
+            </div>
+              <!-- Fondo oscuro -->
+                <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+                <!-- Menú móvil lateral -->
+                <nav class="menu-movil" id="menuMovil">
+                    <button class="close-menu" onclick="closeMenu()">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                    <li>
+                    <button onclick="toggleSubmenu()">Especialidades</button>
+                    <ul class="submenu" id="submenu">
+                        <li><a href="ortodoncia.html">Ortodoncia</a></li>
+                        <li><a href="../ortopedia-maxilar/ortopedia-maxilar.html">Ortopedia funcional de los Maxilares</a></li>
+                        <li><a href="../implantologia/implantologia.html">Implantología 3D</a></li>
+                        <li><a href="../periodoncia/periodoncia.html">Periodoncia</a></li>
+                        <li><a href="../cirugia-bucal-maxilofacial/cirugia-bucal.html">Cirugía Bucal Maxilofacial</a></li>
+                        <li><a href="../odontopediatria/odontopediatria.html">Odontopediatría</a></li>
+                        <li><a href="../disfuncion-mandibular/disfuncion-mandibular.html">Disfunción Temporo Mandibular</a></li>
+                        <li><a href="../orofacial/orofacial.html">Dolor Orofacial</a></li>
+                        <li><a href="../bruxismo/bruxismo.html">Bruxismo</a></li>
+                        <li><a href="../rehabilitacion-oral/rehabilitacion-oral.html">Rehabilitación Oral</a></li>
+                        <li><a href="../endodoncia/endodoncia.html">Endodoncia</a></li>
+                    </ul>
+                    </li>
+                        <li><a href="../blog/blog1/blog1.html">Blog</a></li>
+                        <li><a href="../contacto/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+        </nav>
+       <div class="hero">
+                <div class="contenedor-imgodonto">
+                <div class="img-cirujia-princi">
+                   
+                        <img src="../img/ortodoncia-principal1.png" alt="error">
+                
+                </div>
+            </div>
+
+                <div class="contenedor-titulo">
+                    <div class="contenedor-titulo1">
+                        <div class="titulo-principal">
+                        <h2 id="titulo-principal1">ORTODONCIA</h2> 
+                        
+                         <p>
+                        Ofrecemos una amplia gama de tratamientos incluyendo <strong>brackets convencionales</strong>, <strong>brackets autoligantes</strong>, <strong>brackets estéticos (transparentes)</strong> y <strong>alineadores invisibles.</strong>
+                        </p>
+         
+                        </div>
+
+                        <div class="contenedor-contacto" >
+                            <button onclick="window.location.href=  'contacto/contacto.html'" id="contenedor-contacto">SOLICITA TU CITA</button>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div> <!-- Imagen de fondo -->
+    </header>
+
+    <main>
+        <div class="contenedor-lista">
+            <div class="parrafo-lista">
+                <div class="contenedor" id="beneficios">
+                    
+                    <h3>Beneficios del tratamiento de ortodoncia:</h3>
+                    <p>✅ Mejora estética de la sonrisa y el rostro.</p>
+                    <p>✅ Mayor confianza y autoestima al sonreír.</p>
+                    <p>✅ Mejor higiene bucal, ya que los dientes alineados son más fáciles de limpiar.</p>
+                    <p>✅ Prevención de caries y enfermedades de encías.</p>
+                    <p>✅ Corrección de mordida para prevenir desgaste dental, dolor mandibular y dificultades al masticar.</p>
+                    <p>✅ Optimización del habla, en casos donde la alineación dental afecta la pronunciación.</p>
+                    <p>✅ Resultados duraderos, especialmente si se usan retenedores tras el tratamiento.</p>
+                </div>
+           
+               <div class="parrafo-imagen-lista">
+                    <img src="../img/ortodoncia13.jpg" alt="error" id="img-ortodoncia-1" loading="lazy">
+               </div>
+            
+            </div>
+        </div>
+        
+        <a href="https://wa.me/51996163307?text=Hola%2C%20quisiera%20más%20información%20sobre%20el%20tratamiento%20de%20Ortodoncia" 
+   class="btn-wsp" target="_blank">
+    <span class="wsp-icon-img">
+        <img src="../iconos/whatsapp_logo.png" alt="WhatsApp" />
+    </span>
+    <div class="wsp-text">
+        <strong>¿Tienes dudas?</strong><br>
+        Escríbenos y agenda tu evaluación
+    </div>
+</a>
+
+        <div class="contenedor-cuerpo">
+            <div class="contenedor-pregu-frecuente" id="contenedor-pregunta-frecuente">
+                
+                <div class="padre-contenedor-pregunta">
+                    <h3>Preguntas frecuentes sobre ortodoncia autoligante</h3>
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿A qué edad se puede comenzar un tratamiento de ortodoncia?</div>
+                        <div class="respuesta">Puede comenzarse desde los 7 años en adelante. Hay tratamientos tempranos (ortopedia) y otros que se realizan en la adolescencia o en adultos. ¡Nunca es tarde para alinear tu sonrisa!</div>
+                    </div>
+    
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿Qué tipos de ortodoncia existen?</div>
+                        <div class="respuesta">
+                            Ofrecemos diferentes opciones:
+                            <ul>
+                                <li>Brackets metálicos tradicionales</li>
+                                <li>Brackets estéticos</li>
+                                <li>Ortodoncia invisible </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿Duele usar ortodoncia?</div>
+                        <div class="respuesta">Puede haber molestias leves los primeros días tras ajustes, pero son totalmente manejables. Es parte del proceso de adaptación.</div>
+                    </div>
+    
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿Necesito retenedores después del tratamiento?</div>
+                        <div class="respuesta">Sí, es fundamental usar retenedores para mantener los dientes en su nueva posición y asegurar que los resultados sean duraderos.</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>    
+
+        <a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0" class="whatsapp-icon"><img src="../iconos/whatsapp_logo.png" alt="error"></a>
+
+
+    </main>
+
+    <footer>
+        <div class="raiz">
+            <div class="contenedor-footer">
+                <div class="icono-logo">
+                    <img src="../ABDENT_BLANCO.png" alt="error" >
+                </div>
+                <div class="iconos-redes">
+                    <div class="icono1">
+                        <a href="https://www.facebook.com/ABDent.Braulio">
+                            
+                           <img src="../iconos/Facebook.png" alt="error"  class="icono-img"> 
+                           
+                            ABDent Ortodoncia y Estética
+                        </a>
+                    </div>
+                   
+                    <div class="icono1"><a href="https://www.instagram.com/abdent.braulio/"><img src="../iconos/Instagram.png" alt="error"  class="icono-img">@abdent.braulio</a></div>
+
+                    <div class="icono1"><a href="https://www.tiktok.com/@abdent.braulio"><img src="../iconos/TikTok.png" alt="error"  class="icono-img">@abdent.braulio</a></div>
+
+                    <div class="icono1"><a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0"><img src="../iconos/WhatsApp.png" alt="error" class="icono-img">+51 996 163 307</a></div>
+                    
+                    <div class="icono1">
+                    <a href="#">
+                        Políticas y Términos
+                    </a>
+                    
+                </div>
+                </div>
+                
+            </div>
+            <p class="derechos">&copy; 2025 AB Dent. Todos los derechos reservados.  </p>
+        </div>
+    </footer>
+    <script>
+    function toggleMenu() {
+      document.getElementById("menuMovil").classList.toggle("active");
+      document.getElementById("overlay").classList.toggle("active");
+    }
+
+    function closeMenu() {
+      document.getElementById("menuMovil").classList.remove("active");
+      document.getElementById("overlay").classList.remove("active");
+    }
+
+    function toggleSubmenu() {
+      document.getElementById("submenu").classList.toggle("active");
+    }
+  </script>
+
+
+
+  <script>
+    //para que este quieto la pagina cuando haga  scroll
+     //para que este quieto la pagina cuando haga  scroll
+  function toggleMenu() {
+    const menu = document.getElementById("menuMovil");
+    const overlay = document.getElementById("overlay");
+    const isActive = menu.classList.toggle("active");
+    overlay.classList.toggle("active");
+
+    if (isActive) {
+      document.body.classList.add("bloqueado");
+    } else {
+      document.body.classList.remove("bloqueado");
+    }
+  }
+
+  function closeMenu() {
+    document.getElementById("menuMovil").classList.remove("active");
+    document.getElementById("overlay").classList.remove("active");
+    document.body.classList.remove("bloqueado");
+  }
+
+  function toggleSubmenu() {
+    document.getElementById("submenu").classList.toggle("active");
+
+    
+  }
+
+   //para que este quieto la pagina cuando haga  scroll
+    //para que este quieto la pagina cuando haga  scroll
+</script>
+
+
+    <script src="https://kit.fontawesome.com/01ddb5cacc.js" crossorigin="anonymous"></script>
+    <!-- barra principal cambiar de color blanco a negro claro -->
+    <script src="../barra.js"></script>
+    <!-- carga de logo en la pagina-->
+    <script src="../cargaPagina.js"></script>
+    <!-- scrip para la transicion-->
+     <script src="../ortodoncia/ortodoncia-transicion.js"></script>
+     <script src="preguntas-frecuentes.js"></script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implantología 3D</title>
+    <link rel="stylesheet" href="implantologia.css">
+    <link rel="icon" href="../iconos/abdent icono.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Serif+Text:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gabarito:wght@400..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="preloader">
+        <img src="../LOGO_ABDENT.png" alt="Logo de la clínica">
+    </div>
+    <header>
+        <nav class="barra-navegacion">
+            <div class="contenedor-nav" id="contenedor-nav">
+                <div class="contenedor-img-android">
+                        <button class="menu-toggle" onclick="toggleMenu()">
+                        <i class="fa-solid fa-grip-lines"></i>
+                    </button>
+                    <div class="logo-celular">
+                        <img src="../ABDENT_BLANCO.png" alt="logo-blanco">
+                    </div>
+                </div>
+
+                <a href="../index.html">Inicio</a>
+                <div class="menu">
+                    <a href="#" class="especialidades">Especialidades</a>
+                    <div class="menu-item">
+
+                      
+                            <a href="../ortodoncia/ortodoncia.html">Ortodoncia</a>
+                            
+
+                        <a href="../ortopedia-maxilar/ortopedia-maxilar.html">Ortopedia funcional de los Maxilares</a>
+                        <a href="implantologia.html">Implantologia 3D</a>
+                        <a href="../periodoncia/periodoncia.html">Periodoncia</a>
+                        <a href="../cirugia-bucal-maxilofacial/cirugia-bucal.html">Cirugía Bucal Maxilofacial</a>
+                        <a href="../odontopediatria/odontopediatria.html">Odontopediatría</a>
+                        <a href="../disfuncion-mandibular/disfuncion-mandibular.html">Disfunción Temporo Mandibular</a>
+                        <a href="../orofacial/orofacial.html">Dolor Orofacial</a>
+                        <a href="../bruxismo/bruxismo.html">Bruxismo</a>
+                        <a href="../rehabilitacion-oral/rehabilitacion-oral.html">Rehabilitación Oral</a>
+                        <a href="../endodoncia/endodoncia.html">Endodoncia</a>
+                    </div>
+                </div>
+        
+                <a href="../blog/blog1/blog1.html">Blog</a>
+                <a class="logo"><img src="../ABDENT_BLANCO.png" alt=""></a>
+                
+                <a href="../contacto/contacto.html">Contacto</a>
+
+                 <div class="iconos-redes1">
+                    <a href="https://www.facebook.com/ABDent.Braulio"><img src="../iconos/Facebook.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://www.instagram.com/abdent.braulio/"><img src="../iconos/Instagram.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://www.tiktok.com/@abdent.braulio"><img src="../iconos/TikTok.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0"><img src="../iconos/Whatsapp.png" alt="error"style="height: 20px;"></a>
+                    
+                </div>
+            </div>
+        
+                     <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+                    <!-- Menú móvil lateral -->
+                    <nav class="menu-movil" id="menuMovil">
+                        <button class="close-menu" onclick="closeMenu()">
+                        <i class="fa-solid fa-x"></i>
+                        
+                        </button>
+                    
+                        <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li>
+                            <button onclick="toggleSubmenu()">Especialidades</button>
+                            <ul class="submenu" id="submenu">
+                            <li><a href="../ortodoncia/ortodoncia.html">Ortodoncia</a></li>
+                            <li><a href="../ortopedia-maxilar/ortopedia-maxilar.html">Ortopedia funcional de los Maxilares</a></li>
+                            <li><a href="implantologia.html">Implantología 3D</a></li>
+                            <li><a href="../periodoncia/periodoncia.html">Periodoncia</a></li>
+                            <li><a href="../cirugia-bucal-maxilofacial/cirugia-bucal.html">Cirujia Bucal Maxilofacial</a></li>
+                            <li><a href="../odontopediatria/odontopediatria.html">odontopediatria
+                            <li><a href="../disfuncion-mandibular/disfuncion-mandibular.html">Disfuncion Temporo Mandibular</a></li>
+                            <li><a href="../orofacial/orofacial.html">Dolor Orofacial</a></li>                
+                            <li><a href="../../bruxismo/bruxismo.html">Bruxismo</a></li>
+                            <li><a href="../rehabilitacion-oral/rehabilitacion-oral.html">rehabilitacion oral</a></li>
+                            <li><a href="../endodoncia/endodoncia.html">Endodoncia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../blog/blog1/blog1.html">Blog</a></li>
+                        <li><a href="../contacto/contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>   
+            
+            
+        </nav>
+         <div class="hero">
+                <div class="contenedor-imgodonto">
+                <div class="img-implantologia-princi">
+                   
+                        <img src="../img/IMPLANTOLOGIA4.png" alt="error">
+                
+                </div>
+            </div>
+
+                <div class="contenedor-titulo">
+                    <div class="contenedor-titulo1">
+                        <div class="titulo-principal">
+                        <h2 id="titulo-principal1" >IMPLANTOLOGIA 3D</h2> 
+                        
+                        <h4>Somos los Únicos en Tacna con Tecnología 3D para Implantes Dentales</h4>
+                        <p>Somos pioneros en cirugía guiada por computadora y diseño digital de implantes.</p>           
+                        </div>
+
+                        <div class="contenedor-contacto" >
+                            <button onclick="window.location.href=  'contacto/contacto.html'" id="contenedor-contacto">SOLICITA TU CITA</button>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div> <!-- Imagen de fondo -->
+    </header>
+    
+    <main>
+       
+        <div class="contenedor-lista">
+            <div class="parrafo-lista">
+                <div class="contenedor">
+                    
+                    <h2 class="titulo">Nuestros Servicios</h2>
+                    
+                    <div class="contenedor-parrafo">
+                
+                        <h3>Planificación con tecnología digital avanzada</h3>
+                        <p>Evaluación precisa del hueso y estructuras anatómicas antes de la cirugía para garantizar resultados óptimos.</p>
+                   
+                        <h3>Cirugía guiada digitalmente</h3>
+                        <p>Colocación de implantes con una guía quirúrgica personalizada impresa en 3D, asegurando procedimientos más rápidos y seguros.</p>
+                    
+                        <h3>Implantes con técnica mínimamente invasiva</h3>
+                        <p>Gracias a la planificación previa, reducimos cortes y eliminamos la necesidad de suturas en muchos casos.</p>
+                   
+                        <h3>Prótesis personalizadas con tecnología digital</h3>
+                        <p>Desde coronas y puentes hasta prótesis completas, diseñadas con máxima precisión para una perfecta adaptación.</p>
+                    
+                        <h3>Regeneración ósea asistida por imágenes digitales</h3>
+                        <p>Planificación detallada para tratamientos de aumento óseo para mejorar la estabilidad del implante, optimizando los resultados.</p>
+                    
+                    </div>  
+                           
+                </div>
+           
+               <div class="parrafo-imagen-lista">
+                    <img src="../img/implantologia-gif-F.gif" alt="error">
+               </div>
+            
+            </div>
+        
+        </div>
+        
+         <a href="https://wa.me/51996163307?text=Hola%2C%20quisiera%20más%20información%20sobre%20el%20tratamiento%20de%20ortopedia%20funcional" 
+   class="btn-wsp" target="_blank">
+    <span class="wsp-icon-img">
+        <img src="../iconos/whatsapp_logo.png" alt="WhatsApp" />
+    </span>
+    <div class="wsp-text">
+        <strong>¿Tienes dudas?</strong><br>
+        Escríbenos y agenda tu evaluación
+    </div>
+</a>
+        
+            <h2 class="titulo-cuadros">Por qué utilizar guías quirúrgicas 3D en procedimientos odontológicos</h2>
+
+            <div class="contenedor-cuadros">
+                 
+                    <div class="contenedor-c">
+                        
+                        <div class="columna">
+                        <h4 class="c-titulo" onclick="mostrarRespuesta(this)">Mayor precisión en la colocación de implantes</h4>
+                        <p class="c-parrafo" onclick="ocultarRespuesta(this)">
+                            Gracias a la tecnología 3D, los implantes se colocan con exactitud milimétrica, mejorando la integración ósea.
+                        </p>
+                        </div>
+
+                        <div class="columna">
+                        <h4 class="c-titulo" onclick="mostrarRespuesta(this)">Procedimientos más rápidos, seguros y menos invasivos</h4>
+                        <p class="c-parrafo" onclick="ocultarRespuesta(this)">
+                        La planificación digital permite optimizar cada paso del tratamiento, reduciendo el tiempo en la clínica y la incomodidad del paciente.
+                        </p>
+                        </div>
+                        <div class="columna">
+                        <h4 class="c-titulo" onclick="mostrarRespuesta(this)">Reducción significativa de errores o imprevistos quirúrgicos</h4>
+                        <p class="c-parrafo" onclick="ocultarRespuesta(this)">
+                        La cirugía guiada minimiza riesgos, asegurando una colocación precisa y evitando complicaciones posteriores.
+                        </p>
+                        </div>
+                        <div class="columna">
+                        <h4 class="c-titulo" onclick="mostrarRespuesta(this)">Recuperación postoperatoria más cómoda y con menos molestias</h4>
+                        <p class="c-parrafo" onclick="ocultarRespuesta(this)">
+                        Al ser un procedimiento menos invasivo, se reduce el dolor, la inflamación y el tiempo de cicatrización.
+                        </p>
+                        </div>
+                        <div class="columna">
+                        <h4 class="c-titulo" onclick="mostrarRespuesta(this)">Mejor ajuste y estética en las prótesis gracias a la planificación digital</h4>
+                        <p class="c-parrafo" onclick="ocultarRespuesta(this)">
+                        Las coronas y prótesis diseñadas digitalmente se adaptan perfectamente a la estructura bucal, logrando un resultado más natural y funcional.
+                        </p>
+                        </div>
+                        <div class="columna">
+                        <h4 class="c-titulo" onclick="mostrarRespuesta(this)">Uso de materiales biocompatibles que favorecen la integración ósea</h4>
+                        <p class="c-parrafo" onclick="ocultarRespuesta(this)">
+                        Los implantes están hechos de materiales avanzados que optimizan la adaptación y la durabilidad.
+                        </p>
+                        </div>
+                        <div class="columna">
+                        <h4 class="c-titulo" onclick="mostrarRespuesta(this)">Ideal para casos complejos o pacientes con poco hueso disponible</h4>
+                        <p class="c-parrafo" onclick="ocultarRespuesta(this)">
+                        La tecnología 3D permite soluciones adaptadas incluso para pacientes con pérdida ósea significativa.
+                        </p>
+                        </div>
+                        <div class="columna">
+                        <h4 class="c-titulo" onclick="mostrarRespuesta(this)">Impacto positivo en la calidad de vida del paciente</h4>
+                        <p class="c-parrafo" onclick="ocultarRespuesta(this)">
+                        Mejora la función masticatoria, la estabilidad dental y la confianza en la sonrisa.
+                        </p>
+                        </div>
+                        
+                    </div>
+            </div>
+  
+        <div class="contenedor-cuerpo">
+            <div class="contenedor-pregu-frecuente">
+                <h1>Preguntas frecuentes sobre Implantología 3D</h1>
+                <div class="padre-contenedor-pregunta">
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿Qué diferencia hay entre la implantología tradicional y la 3D?</div>
+                        <div class="respuesta">La implantología 3D se basa en tecnología digital para planificar, diseñar guías quirúrgicas personalizadas, dando precisión, reduciendo el margen de error, tiempo quirúrgico y mejorando la integración del implante con el hueso. Es una tecnología avanzada, moderna y segura.</div>
+                    </div>
+
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿Es más costosa la implantología 3D?</div>
+                        <div class="respuesta">Puede tener un costo ligeramente mayor, pero los beneficios en precisión, seguridad y resultados suelen justificarlo. Además, se reduce el riesgo de complicaciones futuras, evitando gastos adicionales.</div>
+                    </div>
+    
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿Cuánto tarda el tratamiento?</div>
+                        <div class="respuesta">Al estar planificado digitalmente, los procedimientos se realizan en menos tiempo y pueden realizarse en una sola sesión quirúrgica. El tiempo total depende de cada caso.</div>
+                    </div>
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿Es apta para todos los pacientes?</div>
+                        <div class="respuesta">La tecnología 3D permite adaptarse incluso a casos con anatomías complicadas, aunque hay algunas excepciones, por ello es importante la evaluación integral por el especialista.</div>
+                    </div>
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿El procedimiento es doloroso?</div>
+                        <div class="respuesta">Gracias a la cirugía guiada y la planificación digital, se minimiza la invasividad y el dolor postoperatorio es generalmente leve.</div>
+                    </div>
+
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿Cuánto dura un implante colocado con tecnología 3D?</div>
+                        <div class="respuesta">Los implantes pueden durar toda la vida con el cuidado adecuado, ya que la precisión del procedimiento mejora la integración ósea.</div>
+                    </div>
+    
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿Requiere cuidados especiales después del tratamiento?</div>
+                        <div class="respuesta">Se recomienda seguir las indicaciones del especialista, como mantener una buena higiene oral y acudir a controles periódicos.</div>
+                    </div>
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿Cómo sé si soy candidato para la implantología 3D?</div>
+                        <div class="respuesta">Una evaluación integral por el implantólogo determinará si se da las condiciones para la colocación de implantes dentales.</div>
+                    </div>
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿Si perdí hace mucho tiempo mi diente, puedo colocarme implantes?</div>
+                        <div class="respuesta">Sí, puedes colocarte un implante, pero es clave evaluar el hueso. Si hay pérdida ósea, podría requerirse un injerto previo. Lo mejor es consultar a un especialista.</div>
+                    </div>
+
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿Pueden colocar el implante en el momento de la exodoncia?</div>
+                        <div class="respuesta">Sí, se llama implante inmediato, colocándose el implante tras la exodoncia, y ayuda a conservar el hueso y acelerar el proceso de rehabilitación, Esto es posible siempre que el hueso sea adecuado y no haya infección. Un especialista debe evaluar cada caso.</div>
+                    </div>
+    
+                </div>
+                
+            </div>
+        </div> 
+        <a href="https://wa.me/51996163307?text=Hola%2C%20quisiera%20más%20información%20sobre%20el%20tratamiento%20de%20ortopedia%20funcional" 
+   class="btn-wsp" target="_blank">
+    <span class="wsp-icon-img">
+        <img src="../iconos/whatsapp_logo.png" alt="WhatsApp" />
+    </span>
+    <div class="wsp-text">
+        <strong>¿Tienes dudas?</strong><br>
+        Escríbenos y agenda tu evaluación
+    </div>
+</a>
+
+
+
+           <a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0" class="whatsapp-icon"><img src="../iconos/whatsapp_logo.png" alt="error"></a>
+
+    </main>
+
+    <footer>
+        <div class="raiz">
+            <div class="contenedor-footer">
+                <div class="icono-logo">
+                    <img src="../ABDENT_BLANCO.png" alt="error" >
+                </div>
+                <div class="iconos-redes">
+                    <div class="icono1">
+                        <a href="https://www.facebook.com/ABDent.Braulio">
+                            
+                           <img src="../iconos/Facebook.png" alt="error"  class="icono-img"> 
+                           
+                            ABDent Ortodoncia y Estética
+                        </a>
+                    </div>
+                   
+                    <div class="icono1"><a href="https://www.instagram.com/abdent.braulio/"><img src="../iconos/Instagram.png" alt="error"  class="icono-img">@abdent.braulio</a></div>
+
+                    <div class="icono1"><a href="https://www.tiktok.com/@abdent.braulio"><img src="../iconos/TikTok.png" alt="error"  class="icono-img">@abdent.braulio</a></div>
+
+                    <div class="icono1"><a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0"><img src="../iconos/WhatsApp.png" alt="error" class="icono-img">+51 996 163 307</a></div>
+                    
+                    <div class="icono1">
+                    <a href="#">
+                        Políticas y Términos
+                    </a>
+                    
+                </div>
+                </div>
+                
+            </div>
+            <p class="derechos">&copy; 2025 AB Dent. Todos los derechos reservados.  </p>
+        </div>
+    </footer>
+    <!-- barra principal cambiar de color blanco a negro claro -->
+    <script src="../barra.js"></script>
+    <!-- carga de logo en la pagina-->
+    <script src="../cargaPagina.js"></script>
+    <!-- scrip para la transicion-->
+     <script src="../implantologia/implantologia-transicion.js"></script>
+     <script src="../implantologia/preguntas-frecuentes.js"></script>
+     <script src="https://kit.fontawesome.com/01ddb5cacc.js" crossorigin="anonymous"></script>
+
+            <script>
+                        function mostrarRespuesta(titulo) {
+                        const respuesta = titulo.nextElementSibling;
+
+                        // Ocultar titulo con una clase
+                        titulo.classList.add('oculto');
+
+                        
+                            respuesta.classList.add('visible');
+                        
+                        }
+
+                        function ocultarRespuesta(respuesta) {
+                    const titulo = respuesta.previousElementSibling;
+                    respuesta.classList.remove('visible');
+
+                    setTimeout(() => {
+                        respuesta.classList.remove('visible');
+                        titulo.style.display = 'block';
+                        titulo.classList.remove('oculto');
+                    }, 800);
+                    }
+            </script>
+
+
+<script>
+    function toggleMenu() {
+      document.getElementById("menuMovil").classList.toggle("active");
+      document.getElementById("overlay").classList.toggle("active");
+    }
+
+    function closeMenu() {
+      document.getElementById("menuMovil").classList.remove("active");
+      document.getElementById("overlay").classList.remove("active");
+    }
+
+    function toggleSubmenu() {
+      document.getElementById("submenu").classList.toggle("active");
+    }
+  </script>
+
+<script>
+    //para que este quieto la pagina cuando haga  scroll
+     //para que este quieto la pagina cuando haga  scroll
+  function toggleMenu() {
+    const menu = document.getElementById("menuMovil");
+    const overlay = document.getElementById("overlay");
+    const isActive = menu.classList.toggle("active");
+    overlay.classList.toggle("active");
+
+    if (isActive) {
+      document.body.classList.add("bloqueado");
+    } else {
+      document.body.classList.remove("bloqueado");
+    }
+  }
+
+  function closeMenu() {
+    document.getElementById("menuMovil").classList.remove("active");
+    document.getElementById("overlay").classList.remove("active");
+    document.body.classList.remove("bloqueado");
+  }
+
+  function toggleSubmenu() {
+    document.getElementById("submenu").classList.toggle("active");
+
+    
+  }
+
+   //para que este quieto la pagina cuando haga  scroll
+    //para que este quieto la pagina cuando haga  scroll
+</script>
+
+
+     
+
+</body>
+</html>

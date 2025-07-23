@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Cuándo hacer la primera visita al dentista y por qué es tan importante?</title>
+    <link rel="stylesheet" href="lectura.css">
+    
+    <link rel="icon" href="../../iconos/abdent icono.png">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Serif+Text:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gabarito:wght@400..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    html {
+        scroll-behavior: smooth; /* Para un desplazamiento suave */
+        scroll-padding-top: 140px; /* Ajusta esto al tamaño de tu encabezado fijo */
+    }
+</style>
+<body>
+    <div id="preloader">
+        <img src="../../LOGO_ABDENT.png" alt="Logo de la clínica">
+    </div>
+    <header class="carga">
+        <nav class="barra-navegacion">
+            <div class="contenedor-nav" id="contenedor-nav">
+
+                <div class="contenedor-img-android">
+                        <button class="menu-toggle" onclick="toggleMenu()">
+                        <i class="fa-solid fa-grip-lines"></i>
+                    </button>
+                    <div class="logo-celular">
+                        <img src="../../ABDENT_BLANCO.png" alt="logo-blanco">
+                    </div>
+                </div>
+                
+                <a href="../../index.html">Inicio</a>
+                
+                <div class="menu">
+                    <a href="#" class="especialidades">Especialidades</a>
+                    <div class="menu-item">
+
+                       
+                        <a href="../../ortodoncia/ortodoncia.html">Ortodoncia</a>                       
+                        <a href="../../ortopedia-maxilar/ortopedia-maxilar.html">Ortopedia funcional de los Maxilares</a>
+                        <a href="../../implantologia/implantologia.html">Implantologia 3D</a>
+                        <a href="../../periodoncia/periodoncia.html">Periodoncia</a>
+                        <a href="../../cirugia-bucal-maxilofacial/cirugia-bucal.html">Cirugía Bucal Maxilofacial</a>
+                        <a href="../../odontopediatria/odontopediatria.html">Odontopediatría</a>
+                        <a href="../../disfuncion-mandibular/disfuncion-mandibular.html">Disfunción Temporo Mandibular</a>
+                        <a href="../../orofacial/orofacial.html">Dolor Orofacial</a>
+                        <a href="../../bruxismo/bruxismo.html">Bruxismo</a>
+                        <a href="../../rehabilitacion-oral/rehabilitacion-oral.html">Rehabilitación Oral</a>
+                        <a href="../../endodoncia/endodoncia.html">Endodoncia</a>
+                    </div>
+            </div>
+              <a href="blog1.html">Blog</a>
+                <a class="logo">
+                    <img src="../../ABDENT_BLANCO.png" alt="">
+                </a>
+                
+
+                <a href="../../contacto/contacto.html">Contacto</a>
+                <div class="iconos-redes1">
+                    <a href="https://www.facebook.com/ABDent.Braulio"><img src="../../iconos/Facebook.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://www.instagram.com/abdent.braulio/"><img src="../../iconos/Instagram.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://www.tiktok.com/@abdent.braulio"><img src="../../iconos/TikTok.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0"><img src="../../iconos/WhatsApp.png" alt="error"style="height: 20px;"></a>
+                        
+                </div>
+            </div>
+
+        </nav>
+        <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+                    <!-- Menú móvil lateral -->
+                    <nav class="menu-movil" id="menuMovil">
+                        <button class="close-menu" onclick="closeMenu()">
+                        <i class="fa-solid fa-x"></i>
+                        
+                        </button>
+                    
+                        <ul>
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li>
+                            <button onclick="toggleSubmenu()">Especialidades</button>
+                            <ul class="submenu" id="submenu">
+                            <li><a href="../../ortodoncia/ortodoncia.html">Ortodoncia</a></li>
+                            <li><a href="../../ortopedia-maxilar/">Ortopedia funcional de los Maxilares</a></li>
+                            <li><a href="../../implantologia/implantologia.html">Implantología 3D</a></li>
+                            <li><a href="../../periodoncia/periodoncia.html">Periodoncia</a></li>
+                            <li><a href="../../cirugia-bucal-maxilofacial/cirugia-bucal.html">Cirujia Bucal Maxilofacial</a></li>
+                            <li><a href="../../odontopediatria/odontopediatria.html">odontopediatria
+                            <li><a href="../../disfuncion-mandibular/disfuncion-mandibular.html">Disfuncion Temporo Mandibular</a></li>
+                            <li><a href="../../orofacial/orofacial.html">Dolor Orofacial</a></li>
+                            <li><a href="../../bruxismo/bruxismo.html">Bruxismo</a></li>
+                            <li><a href="../../rehabilitacion-oral/rehabilitacion-oral.html">rehabilitacion oral</a></li>
+                            <li><a href="../../endodoncia/endodoncia.html">Endodoncia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog1.html">Blog</a></li>
+                        <li><a href="../../contacto/contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+    </header>
+
+
+
+
+<main class="main">
+  <div class="contenedor-cuerpo">
+
+    <div class="contenedor-blog1" id="contenedor-blog1">
+      <div class="contenedor-blog1-inner">
+        <div class="blog-2-central">
+          <div class="blog-1">
+            <div class="img-1">
+              <img src="../../img-blog/hiloDental1.jpg">
+            </div>
+            <div class="parrafo-1">
+              <a href="#blog5" style="text-decoration: none;">
+                <h2>Hilo dental: por qué no debe faltar en tu rutina y cómo usarlo bien</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="blog-2-central">
+          <div class="blog-1">
+            <div class="img-2">
+              <img src="../../img-blog/ortodoncia_bracket1.jpg" alt="Ortodoncia">
+            </div>
+            <div class="parrafo-1">
+              <a href="#blog6" style="text-decoration: none;">
+                <h2>Ortodoncia: cómo cuidar tu boca con brackets o alineadores invisibles</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-2-central">
+          <div class="blog-1">
+            <div class="img-1">
+              <img src="../../img-blog/diente_sensible1.jpg" alt="Dientes sensibles">
+            </div>
+            <div class="parrafo-1">
+              <a href="#blog7" style="text-decoration: none;">
+                <h2>Dientes sensibles: cómo protegerlos y prevenir el dolor</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-2-central">
+          <div class="blog-1">
+            <div class="img-1">
+              <img src="../../img-blog/mal-aliento1.jpg" alt="Mal aliento">
+            </div>
+            <div class="parrafo-1">
+              <a href="#blog8" style="text-decoration: none;">
+                <h2>Adiós al mal aliento: consejos eficaces para una boca fresca</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-2-central">
+          <div class="blog-1">
+            <div class="img-1">
+              <img src="../../img-blog/salud-bocal.jpg" alt="Mal aliento">
+            </div>
+            <div class="parrafo-1">
+              <a href="#blog9" style="text-decoration: none;">
+                <h2>Salud bucal y salud general: una conexión más profunda de lo que imaginas</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-2-central">
+          <div class="blog-1">
+            <div class="img-1">
+              <img src="../../img-blog/primera-cita-doctor1.jpg" alt="Mal aliento">
+            </div>
+            <div class="parrafo-1">
+              <a href="#blog1" style="text-decoration: none;">
+                <h2>¿Cuándo hacer la primera visita al dentista y por qué es tan importante?</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-2-central">
+          <div class="blog-1">
+            <div class="img-1">
+              <img src="../../img-blog/enfermedad-periodoncia.jpg" alt="Mal aliento">
+            </div>
+            <div class="parrafo-1">
+              <a href="#blog10" style="text-decoration: none;">
+                <h2>Enfermedad periodontal: qué es, cómo afecta y cómo prevenirla</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-2-central">
+          <div class="blog-1">
+            <div class="img-1">
+              <img src="../../img-blog/bruxismo1.jpg" alt="Mal aliento">
+            </div>
+            <div class="parrafo-1">
+              <a href="#blog11" style="text-decoration: none;">
+                <h2>Bruxismo en niños y adultos: causas, efectos y tratamientos</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-lectura">
+
+      <section id="blog1">
+        <h3>¿Cuándo hacer la primera visita al dentista y por qué es tan importante?</h3>
+        <div class="contenedor-img">
+          <img src="../../img-blog/primera-cita-doctor1.jpg" alt="Primera visita dentista">
+        </div>
+
+        <p><strong>Edad recomendada:</strong> Desde el nacimiento hasta el primer año de vida, cuando erupciona el primer diente. Es esencial para establecer una rutina preventiva y evitar problemas futuros.</p>
+        <p><strong>Importancia:</strong> La visita temprana permite detectar caries del biberón y hábitos nocivos, como chuparse el dedo, el uso prolongado del biberón, entre otros. Además, ayuda a reducir el miedo al dentista en el futuro.</p>
+        <p><strong>Consejos para padres:</strong></p>
+        <ul>
+          <li>No besar en la boca, no soplar alimentos ni probar la comida del niño.</li>
+          <li>Evita transmitir miedo o ansiedad sobre el dentista.</li>
+          <li>Explica que la visita ayudará a tener una buena sonrisa y a prevenir la pérdida de dientes.</li>
+          <li>No digas frases como “no va a doler”, ya que anticipan miedo.</li>
+          <li>Programa la visita cuando el niño esté descansado y de buen humor.</li>
+        </ul>
+        <p><strong>Beneficios adicionales:</strong> La primera visita también ayuda a establecer una relación de confianza con el dentista, fomentando hábitos saludables desde temprana edad. Además, permite a los padres aprender sobre higiene oral, el uso correcto del cepillo y consejos saludables para prevenir caries.</p>
+      </section>
+
+      <section id="blog5">
+        <h3>Hilo dental: Un Hábito Esencial</h3>
+        <div class="contenedor-img">
+          <img src="../../img-blog/hiloDental1.jpg" alt="Hilo dental">
+        </div>
+        <p><strong>¿Por qué usarlo?</strong></p>
+        <ul>
+          <li>Previene enfermedades de las encías (gingivitis y periodontitis).</li>
+          <li>Reduce el riesgo de caries al eliminar placa oculta.</li>
+          <li>Ayuda a combatir el mal aliento.</li>
+          <li>Complementa el cepillado para una higiene completa.</li>
+        </ul>
+        <p><strong>Tip:</strong> Úsalo al menos una vez al día, preferiblemente antes de dormir</p>
+      </section>
+      <div class="contenedor">
+        <button onclick="toggleLista()">VER MÁS BLOGS:</button>
+
+        <div id="listaEnlaces" class="lista">
+          
+          <a href="#">Mal aliento: cómo combatirlo eficazmente</a>
+          <a href="#">Salud bucal y salud general: una conexión más profunda</a>
+          <a href="#">Enfermedad periodontal: qué es, cómo afecta y cómo prevenirla</a>
+          <a href="">Bruxismo en niños y adultos</a>
+          <a href="">Ortodoncia: cuidar tu boca con brackets o alineadores</a>
+          <a href="">Hilo dental: Un Hábito Esencial</a>
+          <a href="">¿Cuándo hacer la primera visita al dentista y por qué es tan importante?</a>
+        </div>
+      </div>
+
+      <section id="blog6">
+        <h3>Ortodoncia: cuidar tu boca con brackets o alineadores</h3>
+        <div class="contenedor-img">
+          <img src="../../img-blog/ortodoncia_bracket1.jpg" alt="Ortodoncia">
+        </div>
+        <p><strong>Brackets:</strong> Cepilla con cepillos interdentales y evita alimentos duros o pegajosos.</p>
+        <p><strong>Alineadores:</strong> Retíralos para comer y cepilla los dientes antes de volver a colocarlos.</p>
+        <p><strong>Consejos adicionales:</strong></p>
+        <ul>
+          <li>Usa enjuagues bucales específicos para ortodoncia a fin de prevenir caries alrededor de los Brackets.</li>
+          <li>Mantén un kit de higiene portátil para usar fuera de casa.</li>
+          <li>Consulta regularmente con tu ortodoncista para ajustes y seguimiento del tratamiento.</li>
+        </ul>
+        <p><strong>Importancia de la higiene:</strong> Una limpieza deficiente durante el tratamiento ortodóntico puede causar manchas blancas permanentes o caries. Es crucial dedicar tiempo a una limpieza exhaustiva para lograr una sonrisa saludable al finalizar el tratamiento.</p>
+      </section>
+
+      <section id="blog7">
+        <h3>Dientes sensibles: cómo protegerlos</h3>
+        <div class="contenedor-img">
+          <img src="../../img-blog/diente_sensible1.jpg" alt="Dientes sensibles">
+        </div>
+        <p><strong>Causas:</strong> Recesión de encías, cepillado fuerte, esmalte desgastado o exposición a ácidos.</p>
+        <p><strong>Síntomas:</strong> Dolor agudo y sensibilidad al frío, calor o alimentos dulces.</p>
+        <p><strong>Prevención:</strong></p>
+        <ul>
+          <li>Usar pastas para dientes sensibles.</li>
+          <li>Cepillos de cerdas suaves.</li>
+          <li>Evitar bebidas ácidas y consultar al odontólogo si el problema persiste.</li>
+        </ul>
+        <p><strong>Tratamientos profesionales:</strong> Aplicación de flúor, selladores dentales o recubrimientos para proteger el esmalte expuesto.</p>
+        <p><strong>Cuidados adicionales:</strong> Evitar cambios bruscos de temperatura en alimentos y bebidas. Usar una técnica de cepillado suave para evitar daños al esmalte.</p>
+      </section>
+
+      <div class="contenedor">
+        <button onclick="toggleLista()">VER MÁS BLOGS:</button>
+
+        <div id="listaEnlaces" class="lista">
+          
+          <a href="#">Mal aliento: cómo combatirlo eficazmente</a>
+          <a href="#">Salud bucal y salud general: una conexión más profunda</a>
+          <a href="#">Enfermedad periodontal: qué es, cómo afecta y cómo prevenirla</a>
+          <a href="">Bruxismo en niños y adultos</a>
+          <a href="">Ortodoncia: cuidar tu boca con brackets o alineadores</a>
+          <a href="">Hilo dental: Un Hábito Esencial</a>
+          <a href="">¿Cuándo hacer la primera visita al dentista y por qué es tan importante?</a>
+        </div>
+      </div>
+
+
+
+      <section id="blog8">
+        <h3>Mal aliento: cómo combatirlo eficazmente</h3>
+        <div class="contenedor-img">
+          <img src="../../img-blog/mal-aliento1.jpg" alt="Mal aliento">
+        </div>
+        <p><strong>Causas:</strong> Mala higiene, sequedad bucal, problemas gástricos o enfermedades periodontales.</p>
+        <p><strong>Consejos:</strong></p>
+        <ul>
+          <li>Cepillarse lengua y dientes al menos dos veces al día.</li>
+          <li>Hidratarse bien y evitar tabaco.</li>
+          <li>Usar enjuagues bucales antibacterianos.</li>
+          <li>Visitar al dentista regularmente para limpieza profesional.</li>
+        </ul>
+        <p><strong>Importante:</strong> Si el mal aliento persiste, consultar con un especialista para descartar otras causas médicas.</p>
+      </section>
+
+      <section id="blog9">
+        <h3>Salud bucal y salud general: una conexión más profunda</h3>
+        <div class="contenedor-img">
+          <img src="../../img-blog/salud-bocal.jpg" alt="Mal aliento">
+        </div>
+        <p><strong>La salud de la boca impacta directamente en los órganos del cuerpo humano. Las infecciones orales pueden agravar enfermedades como:</strong></p>
+        <ul>
+         <li><strong>Diabetes:</strong> Las infecciones dificultan el control de la glucosa.</li>
+          <li><strong>Enfermedades cardíacas:</strong>  Las bacterias orales pueden ingresar al torrente sanguíneo (provocando arritmias, endocarditis bacteriana, infartos, entre otros).</li>
+          <li><strong>Embarazo:</strong>  Puede aumentar el riesgo de parto prematuro, abortos, bajo peso al nacer o alteraciones en los dientes del bebé.</li>
+        </ul>
+          <p>Una buena salud bucal mejora la autoestima, la comunicación y la alimentación. Estudios científicos refuerzan la conexión entre la salud bucal y la salud general.</p>
+          <p><strong>Recomendaciones:</strong> Mantener un control dental cada 6 a 12 meses, hacer revisiones médicas periódicas (especialmente si se padecen enfermedades crónicas como diabetes o hipertensión) y seguir una dieta equilibrada para prevenir infecciones bucales.</p>
+          <p><strong>Relación con el sistema inmunológico:</strong> Una boca saludable fortalece el sistema inmunológico al reducir la carga de bacterias nocivas que pueden afectar otras partes del cuerpo.</p>
+      </section>
+      <div class="contenedor">
+        <button onclick="toggleLista()">VER MÁS BLOGS:</button>
+
+        <div id="listaEnlaces" class="lista">
+          
+          <a href="#">Mal aliento: cómo combatirlo eficazmente</a>
+          <a href="#">Salud bucal y salud general: una conexión más profunda</a>
+          <a href="#">Enfermedad periodontal: qué es, cómo afecta y cómo prevenirla</a>
+          <a href="">Bruxismo en niños y adultos</a>
+          <a href="">Ortodoncia: cuidar tu boca con brackets o alineadores</a>
+          <a href="">Hilo dental: Un Hábito Esencial</a>
+          <a href="">¿Cuándo hacer la primera visita al dentista y por qué es tan importante?</a>
+        </div>
+      </div>
+
+      <section id="blog10">
+        <h3>Enfermedad periodontal: qué es, cómo afecta y cómo prevenirla</h3>
+        <div class="contenedor-img">
+          <img src="../../img-blog/enfermedad-periodoncia.jpg" alt="Mal aliento">
+        </div>
+        <h4>¿Qué es?</h4>
+        <p>Enfermedad inflamatoria crónica del tejido que rodea los dientes, caracterizada por la destrucción del hueso y los tejidos de soporte de los dientes. En su forma más grave, puede provocar la pérdida de dientes.</p>
+
+        <p><strong>¿Cómo afecta?</strong></p>
+        <ul>
+          <li>Encías inflamadas y sangrantes</li>              
+          <li>Mal aliento persistente</li>
+          <li>Retracción de encías</li>
+          <li>Pérdida de dientes</li>
+        </ul>
+        <p><strong>¿Cómo afecta?</strong></p>
+        <ul>
+            <li>Cepillado adecuado después de cada comida</li>
+            <li>Uso diario de hilo dental</li>
+            <li>Visitas regulares al dentista y/o periodoncista</li>
+            <li>Evitar el tabaco</li>
+            <li>Dieta equilibrada</li>
+        </ul>
+      </section>
+
+      <section id="blog11">
+        <h3>Bruxismo en niños y adultos</h3>
+        <div class="contenedor-img-bruxismo">
+          <img src="../../img-blog/bruxismo1.jpg" alt="Mal aliento">
+        </div>
+         <p>Consiste en apretar o rechinar los dientes, ya sea de forma diurna o nocturna, consciente o inconsciente.</p>
+         <p><strong>Causas:</strong> Estrés, maloclusión dental, ansiedad o alteraciones del sueño.</p>
+         <p><strong>Consecuencias:</strong></p>
+        <ul>
+            <li>Desgaste dental y sensibilidad.</li>
+            <li>Dolor en mandíbula o cuello.</li>
+            <li>Dolores de cabeza frecuentes.</li>
+        </ul>
+            <p><strong>Tratamiento:</strong> Férulas nocturnas, ejercicios mandibulares (terapias), terapia psicológica y corrección ortodóntica.</p>
+            <p><strong>Recomendación adicional:</strong> Realizar ejercicio, practicar deportes, evitar el estrés y establecer rutinas de relajación antes de dormir, como meditación o música suave.</p>
+            <p><strong>Impacto en la calidad de vida:</strong> El bruxismo severo puede interrumpir el sueño, causar fatiga y afectar el bienestar general. Identificar y tratar sus causas mejora significativamente la calidad de vida.</p>
+      </section>
+
+      <div class="contenedor">
+        <button onclick="toggleLista()">VER MÁS BLOGS:</button>
+
+        <div id="listaEnlaces" class="lista">
+          
+          <a href="#blog11">Mal aliento: cómo combatirlo eficazmente</a>
+          <a href="#">Salud bucal y salud general: una conexión más profunda</a>
+          <a href="#">Enfermedad periodontal: qué es, cómo afecta y cómo prevenirla</a>
+          <a href="">Bruxismo en niños y adultos</a>
+          <a href="">Ortodoncia: cuidar tu boca con brackets o alineadores</a>
+          <a href="">Hilo dental: Un Hábito Esencial</a>
+          <a href="#blog1">¿Cuándo hacer la primera visita al dentista y por qué es tan importante?</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+
+    <footer>
+        <div class="raiz">
+            <div class="contenedor-footer">
+                <div class="icono-logo">
+                    <img src="../../ABDENT_BLANCO.png" alt="error" >
+                </div>
+                <div class="iconos-redes">
+                    <div class="icono1">
+                        <a href="https://www.facebook.com/ABDent.Braulio">
+                            
+                           <img src="../../iconos/Facebook.png" alt="error"  class="icono-img"> 
+                           
+                            ABDent Ortodoncia y Estética
+                        </a>
+                    </div>
+                   
+                    <div class="icono1"><a href="https://www.instagram.com/abdent.braulio/"><img src="../../iconos/Instagram.png" alt="error"  class="icono-img">@abdent.braulio</a></div>
+
+                    <div class="icono1"><a href="https://www.tiktok.com/@abdent.braulio"><img src="../../iconos/TikTok.png" alt="error"  class="icono-img">@abdent.braulio</a></div>
+
+                    <div class="icono1"><a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0"><img src="../../iconos/WhatsApp.png" alt="error" class="icono-img">+51 996 163 307</a></div>
+                    
+                    <div class="icono1">
+                    <a href="#">
+                        Políticas y Términos
+                    </a>
+                    
+                    </div>
+                </div>
+                
+            </div>
+            <p class="derechos">&copy; 2025 AB Dent. Todos los derechos reservados.  </p>
+        </div>
+    </footer>
+    <script>
+
+</script>
+<script>
+  function toggleLista() {
+  document.querySelectorAll('.lista').forEach(el => {
+    el.classList.toggle('visible');
+  });
+}
+
+</script>
+
+
+    <script>
+    function toggleMenu() {
+      document.getElementById("menuMovil").classList.toggle("active");
+      document.getElementById("overlay").classList.toggle("active");
+    }
+
+    function closeMenu() {
+      document.getElementById("menuMovil").classList.remove("active");
+      document.getElementById("overlay").classList.remove("active");
+    }
+
+    function toggleSubmenu() {
+      document.getElementById("submenu").classList.toggle("active");
+    }
+  </script>
+
+
+
+   <script>
+    //para que este quieto la pagina cuando haga  scroll
+     //para que este quieto la pagina cuando haga  scroll
+  function toggleMenu() {
+    const menu = document.getElementById("menuMovil");
+    const overlay = document.getElementById("overlay");
+    const isActive = menu.classList.toggle("active");
+    overlay.classList.toggle("active");
+
+    if (isActive) {
+      document.body.classList.add("bloqueado");
+    } else {
+      document.body.classList.remove("bloqueado");
+    }
+  }
+
+  function closeMenu() {
+    document.getElementById("menuMovil").classList.remove("active");
+    document.getElementById("overlay").classList.remove("active");
+    document.body.classList.remove("bloqueado");
+  }
+
+  function toggleSubmenu() {
+    document.getElementById("submenu").classList.toggle("active");
+
+    
+  }
+
+   //para que este quieto la pagina cuando haga  scroll
+    //para que este quieto la pagina cuando haga  scroll
+</script>
+
+
+
+
+   <script src="https://kit.fontawesome.com/01ddb5cacc.js" crossorigin="anonymous"></script>
+    <!-- barra principal cambiar de color blanco a negro claro -->
+    <script src="../../barra.js"></script>
+    <!-- carga de logo en la pagina-->
+    <script src="../../cargaPagina.js"></script>
+    <!-- scrip para la transicion-->
+     <script src="../../blog/blog1/lectura-transicion.js"></script>
+</body>
+
+</html>

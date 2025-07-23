@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orofacial.css">
+    <title>Dolor Orofacial</title>
+    <link rel="icon" href="../iconos/abdent icono.png">
+
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Serif+Text:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gabarito:wght@400..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="preloader">
+        <img src="../LOGO_ABDENT.png" alt="Logo de la clínica">
+    </div>
+    <header>
+        <nav class="barra-navegacion">
+            <div class="contenedor-nav" id="contenedor-nav">
+                <button class="menu-toggle" onclick="toggleMenu()">
+                     <i class="fa-solid fa-grip-lines"></i>
+                </button>
+                <div class="logo-celular">
+                    <img src="../ABDENT_BLANCO.png" alt="logo-blanco">
+                </div>
+                
+                <a href="../index.html">Inicio</a>
+                
+                <div class="menu">
+                    <a href="#" class="especialidades">Especialidades</a>
+                    <div class="menu-item">
+                        <a href="../ortodoncia/ortodoncia.html">Ortodoncia</a>                         
+                        <a href="../ortopedia-maxilar/ortopedia-maxilar.html">Ortopedia funcional de los Maxilares</a>
+                        <a href="../implantologia/implantologia.html">Implantologia 3D</a>
+                        <a href="../periodoncia/periodoncia.html">Periodoncia</a>
+                        <a href="../cirugia-bucal-maxilofacial/cirugia-bucal.html">Cirugía Bucal Maxilofacial</a>
+                        <a href="../odontopediatria/odontopediatria.html">Odontopediatría</a>
+                        <a href="../disfuncion-mandibular/disfuncion-mandibular.html">Disfunción Temporo Mandibular</a>
+                        <a href="orofacial.html">Dolor Orofacial</a>
+                        <a href="../bruxismo/bruxismo.html">Bruxismo</a>
+                        <a href="../rehabilitacion-oral/rehabilitacion-oral.html">Rehabilitación Oral</a>
+                        <a href="../endodoncia/endodoncia.html">Endodoncia</a>
+                    </div>
+            </div>
+             <a href="../blog/blog1/blog1.html">Blog</a>
+                <a class="logo"><img src="../ABDENT_BLANCO.png" alt=""></a>
+                
+                <a href="../contacto/contacto.html">Contacto</a>
+
+                 <div class="iconos-redes1">
+                    <a href="https://www.facebook.com/ABDent.Braulio"><img src="../iconos/Facebook.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://www.instagram.com/abdent.braulio/"><img src="../iconos/Instagram.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://www.tiktok.com/@abdent.braulio"><img src="../iconos/TikTok.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0"><img src="../iconos/Whatsapp.png" alt="error"style="height: 20px;"></a>
+                    
+                </div>
+        </div>
+
+                 <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+                    <!-- Menú móvil lateral -->
+                    <nav class="menu-movil" id="menuMovil">
+                        <button class="close-menu" onclick="closeMenu()">
+                        <i class="fa-solid fa-x"></i>
+                        
+                        </button>
+                    
+                        <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li>
+                            <button onclick="toggleSubmenu()">Especialidades</button>
+                            <ul class="submenu" id="submenu">
+                                    <li><a href="../ortodoncia/ortodoncia.html">Ortodoncia</a></li>
+                                    <li><a href="../ortopedia-maxilar/ortopedia-maxilar.html">Ortopedia funcional de los Maxilares</a></li>
+                                    <li><a href="../implantologia/implantologia.html">Implantología 3D</a></li>
+                                    <li><a href="../periodoncia/periodoncia.html">Periodoncia</a></li>
+                                    <li><a href="../cirugia-bucal-maxilofacial/cirugia-bucal.html">Cirugía Bucal Maxilofacial</a></li>
+                                    <li><a href="../odontopediatria/odontopediatria.html">Odontopediatria
+                                    <li><a href="../disfuncion-mandibular/disfuncion-mandibular.html">Disfuncion Temporo Mandibular</a></li>
+                                    <li><a href="orofacial.html">Dolor Orofacial</a></li>                
+                                    <li><a href="../bruxismo/bruxismo.html">Bruxismo</a></li>
+                                    <li><a href="../rehabilitacion-oral/rehabilitacion-oral.html">Rehabilitacion oral</a></li>
+                                    <li><a href="../endodoncia/endodoncia.html">Endodoncia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../blog/blog1/blog1.html">Blog</a></li>
+                        <li><a href="../contacto/contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>  
+                    
+        </nav>
+       <div class="hero">
+                <div class="contenedor-imgodonto">
+                <div class="img-cirujia-princi">
+                   
+                        <img src="../img/orofacial-principal original.png" alt="error">
+                
+                </div>
+            </div>
+
+                <div class="contenedor-titulo">
+                    <div class="contenedor-titulo1">
+                        <div class="titulo-principal">
+                        <h2 id="titulo-principal1">DOLOR OROFACIAL</h2> 
+                        <p>Condiciones dolorosas en la cara, mandíbula, cabeza y cuello</p>
+                                  
+                        </div>
+
+                        <div class="contenedor-contacto" >
+                            <button onclick="window.location.href=  'contacto/contacto.html'" id="contenedor-contacto">SOLICITA TU CITA</button>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div> <!-- Imagen de fondo -->
+    </header>
+    <main>
+        <div class="contenedor-lista">
+            <div class="parrafo-lista">
+                <div class="contenedor">
+                    
+                    <h2 class="titulo">Nuestros Servicios</h2>
+                    
+                    <div class="contenedor-parrafo">
+                
+                        <h3>Evaluación clínica integral y diagnóstico diferencial</h3>
+                        <p>Historia clínica detallada, exploración física y estudios complementarios.</p>
+                   
+                        <h3>Tratamiento y tensión muscular</h3>
+                        <p>Según la complejidad puede combinarse con diversas formas de terapias, fisioterapia, control de hábitos y otros, se sugiere deportes y menos estrés.</p>
+                    
+                        <h3>Manejo de neuralgias y dolores neuropáticos</h3>
+                        <p>Como la neuralgia del trigémino o dolor postoperatorio persistente, tratamientos personalizados.</p>
+                   
+                        <h3>Terapias farmacológicas específicas</h3>
+                        <p>En algunos casos se puede recomendar Antiinflamatorios, relajantes musculares, mayor tratamiento personalizado y especializado.</p>
+                    
+                        <h3>Infiltraciones y bloqueos anestésicos</h3>
+                        <p>Según el dolor crónico o localizado.</p>
+
+                        <h3>Terapia física y rehabilitación orofacial</h3>
+                        <p>Masajes, ejercicios mandibulares, electroestimulación.</p>
+
+                        <h3>Apoyo psicológico y manejo del estrés</h3>
+                        <p>Especialmente útil cuando el dolor se asocia con ansiedad o trastornos somáticos.</p>
+
+                        <h3>Derivación coordinada a otros especialistas si es necesario</h3>
+                        <p>Neurología, otorrinolaringología, psicología, entre otros.</p>
+                    
+                    </div>  
+                           
+                </div>
+           
+               <div class="parrafo-imagen-lista">
+                    <img src="../img/orofacial2.jpg" alt="error">
+               </div>
+            
+            </div>
+        
+        </div>
+
+        <a href="https://wa.me/51996163307?text=Hola%2C%20quisiera%20más%20información%20sobre%20el%20tratamiento%20de%20Dolor%20orofacial" 
+            class="btn-wsp" target="_blank">
+                <span class="wsp-icon-img">
+                    <img src="../iconos/whatsapp_logo.png" alt="WhatsApp" />
+                </span>
+                <div class="wsp-text">
+                    <strong>¿Tienes dudas?</strong><br>
+                    Escríbenos y agenda tu evaluación
+                </div>
+            </a>
+
+        <div class="contenedor-lista1">
+            <div class="parrafo-lista1">
+                <div class="contenedor1" id="beneficios">
+                    
+                    <h3>Beneficios del tratamiento:</h3>
+                    <p>✅ Identificación de la causa real del dolor (no siempre es dental)</p>
+                    <p>✅ Reducción del dolor facial y mandibular crónico</p>
+                    <p>✅ Mejora de la calidad de vida, sueño y estado emocional</p>
+                    <p>✅ Prevención del uso excesivo de analgésicos</p>
+                    <p>✅ Mayor funcionalidad al masticar, hablar o sonreír sin molestias</p>
+                    <p>✅ Enfoque integral que trata el origen, no solo los síntomas</p>
+                    
+                </div>
+           
+               <div class="parrafo-imagen-lista">
+                    <img src="../img/orofacial13.jpg" alt="error" id="img-ortodoncia-1" loading="lazy">
+               </div>
+            
+            </div>
+        </div>
+        <div class="contenedor-cuerpo">
+            <div class="contenedor-pregu-frecuente">
+                <h1>Preguntas frecuentes</h1>
+                <div class="padre-contenedor-pregunta">
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿El dolor orofacial siempre tiene origen dental?</div>
+                        <div class="respuesta">No. Puede tener causas, ansiedad recurrente, estrés de años y similares,  problemas musculares, articulares, nerviosas o incluso emocionales.</div>
+                    </div>
+
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿Qué tan común es el dolor orofacial?</div>
+                        <div class="respuesta">Es bastante frecuente y a menudo subdiagnosticado, especialmente en casos crónicos o de origen dental y no dental.</div>
+                    </div>
+    
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿Qué profesionales tratan este tipo de dolor?</div>
+                        <div class="respuesta">Odontólogos especializados en dolor orofacial, cirujanos maxilofaciales, fisioterapeutas, neurólogos, psicólogos y otros.</div>
+                    </div>
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿Cuánto tiempo dura el tratamiento?</div>
+                        <div class="respuesta">Depende del origen del dolor. Algunos casos se alivian en breve tiempo, semanas, otros requieren una observacion continua.</div>
+                    </div>
+                    <div class="contenedor-preguntas">
+                        <div class="pregunta">¿El tratamiento incluye medicamentos fuertes?</div>
+                        <div class="respuesta">Solo si es necesario. Se priorizan terapias conservadoras y combinadas para evitar efectos secundarios o dependencia.</div>
+                    </div>
+    
+                </div>
+                
+            </div>
+        </div>     
+
+           <a href="https://wa.me/51996163307?text=Hola%2C%20quisiera%20más%20información%20sobre%20el%20tratamiento%20de%20Dolor%20orofacial" 
+            class="btn-wsp" target="_blank">
+                <span class="wsp-icon-img">
+                    <img src="../iconos/whatsapp_logo.png" alt="WhatsApp" />
+                </span>
+                <div class="wsp-text">
+                    <strong>¿Tienes dudas?</strong><br>
+                    Escríbenos y agenda tu evaluación
+                </div>
+            </a>
+
+
+          <a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0" class="whatsapp-icon"><img src="../iconos/whatsapp_logo.png" alt="error"></a>
+
+
+    </main>
+     <footer>
+        <div class="raiz">
+            <div class="contenedor-footer">
+                <div class="icono-logo">
+                    <img src="../ABDENT_BLANCO.png" alt="error" >
+                </div>
+                <div class="iconos-redes">
+                    <div class="icono1">
+                        <a href="https://www.facebook.com/ABDent.Braulio">
+                            
+                           <img src="../iconos/Facebook.png" alt="error"  class="icono-img"> 
+                           
+                            ABDent Ortodoncia y Estética
+                        </a>
+                    </div>
+                   
+                    <div class="icono1"><a href="https://www.instagram.com/abdent.braulio/"><img src="../iconos/Instagram.png" alt="error"  class="icono-img">@abdent.braulio</a></div>
+
+                    <div class="icono1"><a href="https://www.tiktok.com/@abdent.braulio"><img src="../iconos/TikTok.png" alt="error"  class="icono-img">@abdent.braulio</a></div>
+
+                    <div class="icono1"><a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0"><img src="../iconos/WhatsApp.png" alt="error" class="icono-img">+51 996 163 307</a></div>
+                    
+                    <div class="icono1">
+                    <a href="#">
+                        Políticas y Términos
+                    </a>
+                    
+                </div>
+                </div>
+                
+            </div>
+            <p class="derechos">&copy; 2025 AB Dent. Todos los derechos reservados.  </p>
+        </div>
+    </footer>
+
+ 
+
+    <script>
+    function toggleMenu() {
+      document.getElementById("menuMovil").classList.toggle("active");
+      document.getElementById("overlay").classList.toggle("active");
+    }
+
+    function closeMenu() {
+      document.getElementById("menuMovil").classList.remove("active");
+      document.getElementById("overlay").classList.remove("active");
+    }
+
+    function toggleSubmenu() {
+      document.getElementById("submenu").classList.toggle("active");
+    }
+  </script>
+
+
+      <script>
+    //para que este quieto la pagina cuando haga  scroll
+     //para que este quieto la pagina cuando haga  scroll
+  function toggleMenu() {
+    const menu = document.getElementById("menuMovil");
+    const overlay = document.getElementById("overlay");
+    const isActive = menu.classList.toggle("active");
+    overlay.classList.toggle("active");
+
+    if (isActive) {
+      document.body.classList.add("bloqueado");
+    } else {
+      document.body.classList.remove("bloqueado");
+    }
+  }
+
+  function closeMenu() {
+    document.getElementById("menuMovil").classList.remove("active");
+    document.getElementById("overlay").classList.remove("active");
+    document.body.classList.remove("bloqueado");
+  }
+
+  function toggleSubmenu() {
+    document.getElementById("submenu").classList.toggle("active");
+
+    
+  }
+
+   //para que este quieto la pagina cuando haga  scroll
+    //para que este quieto la pagina cuando haga  scroll
+</script>
+
+
+     <script src="https://kit.fontawesome.com/01ddb5cacc.js" crossorigin="anonymous"></script>
+    <!-- barra principal cambiar de color blanco a negro claro -->
+    <script src="../barra.js"></script>
+    <!-- carga de logo en la pagina-->
+    <script src="../cargaPagina.js"></script>
+    
+    <script src="../implantologia/implantologia-transicion.js"></script>
+    <script src="preguntas-frecuentes.js"></script>
+</body>
+</html>

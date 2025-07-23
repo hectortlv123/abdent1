@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABDent</title>
+    <link rel="icon" href="iconos/abdent icono.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="carrusel.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="estilos-index.css">
+ 
+</head>
+<body>
+
+    <div id="preloader">
+        <img src="LOGO_ABDENT.png" alt="Logo de la clínica">
+    </div>
+    <header>
+        <nav class="barra-navegacion" id="barra-navegacion">
+            <div class="contenedor-nav" id="contenedor-nav">
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fa-solid fa-grip-lines"></i>
+                </button>
+                <div class="logo-celular">
+                    <img src="ABDENT_BLANCO.png" alt="error">
+                </div>
+                <a href="index.html">Inicio</a>
+                
+                <div class="menu">
+                    <a href="#" class="especialidades">Especialidades</a>
+                    <div class="menu-item">
+
+                        
+                        <a href=" ortodoncia/ortodoncia.html">Ortodoncia</a>
+                        <a href="ortopedia-maxilar/ortopedia-maxilar.html">Ortopedia funcional de los Maxilares</a>
+                        <a href="implantologia/implantologia.html">Implantologia 3D</a>
+                        <a href="periodoncia/periodoncia.html">Periodoncia</a>
+                        <a href="cirugia-bucal-maxilofacial/cirugia-bucal.html">Cirugía Bucal Maxilofacial</a>
+                        <a href="odontopediatria/odontopediatria.html">Odontopediatría</a>
+                        <a href="disfuncion-mandibular/disfuncion-mandibular.html">Disfunción Temporo Mandibular</a>
+                        <a href="orofacial/orofacial.html">Dolor Orofacial</a>
+                        <a href="bruxismo/bruxismo.html">Bruxismo</a>
+                        <a href="rehabilitacion-oral/rehabilitacion-oral.html">Rehabilitación Oral</a>
+                        <a href="endodoncia/endodoncia.html">Endodoncia</a>
+                    </div>
+            </div>
+            <a href="blog/blog1/blog1.html">Blog</a>
+        
+                <a class="logo">
+                    <img src="ABDENT_BLANCO.png" alt="">
+                </a>
+                
+                
+                <a href="contacto/contacto.html">Contacto</a>
+                
+                <div class="iconos-redes1">
+                    <a href="https://www.facebook.com/ABDent.Braulio"><img src="iconos/Facebook.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://www.instagram.com/abdent.braulio/"><img src="iconos/Instagram.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://www.tiktok.com/@abdent.braulio"><img src="iconos/TikTok.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0"><img src="iconos/Whatsapp.png" alt="error"style="height: 20px;"></a>
+                    
+                </div>
+        </div>
+        </nav>
+         <!-- Fondo oscuro -->
+  <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+  <!-- Menú móvil lateral -->
+  <nav class="menu-movil" id="menuMovil">
+    <button class="close-menu" onclick="closeMenu()">
+      <i class="fa-solid fa-x"></i>
+       
+    </button>
+   
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li>
+        <button onclick="toggleSubmenu()">Especialidades</button>
+        <ul class="submenu" id="submenu">
+          <li><a href="../v2/ortodoncia/ortodoncia.html">Ortodoncia</a></li>
+            <li><a href="../v2/ortopedia-maxilar/ortopedia-maxilar.html">Ortopedia funcional de los Maxilares</a></li>
+            <li><a href="../v2/implantologia/implantologia.html">Implantología 3D</a></li>
+            <li><a href="../v2/periodoncia/periodoncia.html">Periodoncia</a></li>
+            <li><a href="../v2/cirugia-bucal-maxilofacial/cirugia-bucal.html">Cirugía Bucal Maxilofacial</a></li>
+            <li><a href="../v2/odontopediatria/odontopediatria.html">Odontopediatria
+            <li><a href="../v2/disfuncion-mandibular/disfuncion-mandibular.html">Disfuncion Temporo Mandibular</a></li>
+            <li><a href="../v2/orofacial/orofacial.html">Dolor Orofacial</a></li>                
+            <li><a href="../v2/bruxismo/bruxismo.html">Bruxismo</a></li>
+            <li><a href="../v2/rehabilitacion-oral/rehabilitacion-oral.html">Rehabilitacion oral</a></li>
+            <li><a href="../v2/endodoncia/endodoncia.html">Endodoncia</a></li>
+        </ul>
+      </li>
+      <li><a href="blog/blog1/blog1.html">Blog</a></li>
+      <li><a href="contacto/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+    </header>
+
+
+   
+
+    <main>
+         <div class="hero">
+                <div class="carousel">
+            <div class="slides" id="slides">
+            <div class="slide">
+                <div class="slide-text">
+                <h1>Sonrisas saludables, confianza asegurada</h1>
+                <p>Tu bienestar dental es nuestra prioridad.</p>
+                <button class="cta-btn">Solicita tu cita</button>
+                </div>
+                <div class="slide-image">
+                <img src="img/doctor-principal-oficial2.png" alt="Dentista atendiendo paciente" />
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-text">
+                <h1>Sonrisas saludables, confianza asegurada</h1>
+                <p>Tu bienestar dental es nuestra prioridad.</p>
+                <button class="cta-btn">Solicita tu cita</button>
+                </div>
+                <div class="slide-image">
+                <img src="img/doctor-principal-oficial2.png" alt="Dentista atendiendo paciente" />
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-text">
+                <h1>Especialistas en atención infantil</h1>
+                <p>Contamos con un equipo cálido y profesional</p>
+                <button class="cta-btn">Ver tratamientos</button>
+                </div>
+                <div class="slide-image">
+                <img src="img/doctor_niña1.png" alt="Ortodoncia" />
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-text">
+                <h1>Donde sonríen las reinas</h1>
+                <p>Calidez, confianza y excelencia en cada atención</p>
+                <button class="cta-btn">SOLICITA TU CITA</button>
+                </div>
+                <div class="slide-image">
+                <img src="img/doctor_misss.png" alt="Implantes dentales" />
+                </div>
+            </div>
+            
+            </div>
+
+            <button class="arrow left" onclick="prevSlide()">❮</button>
+            <button class="arrow right" onclick="nextSlide()">❯</button>
+            <div class="dots" id="dots"></div>
+        </div>
+    </div> <!-- Imagen de fondo -->
+
+                <div class="container-contador2">
+
+                        <div class="counter-container">
+                            <div class="counter" data-target="4">
+                                0</div>
+                             <p>sedes en Perú</p>
+                        </div>
+
+                        <div class="counter-container">
+                        <div class="counter" data-target="12">0</div>
+                        <p>especialidades</p>
+                        </div>
+
+                        <div class="counter-container">
+                        <div class="counter" data-target="20">0</div>
+                        <p>años de experiencia</p>
+                        </div>
+
+                        <div class="counter-container">
+                        <div class="counter" data-target="1500">0</div>
+                        <p>tratamientos realizados</p>
+                        </div>
+                </div>
+        <section class="perfil-doctor">
+            <div class="contenedor-perfil">
+                    <div class="resumen-perfil" id="resumen-perfil">
+                    <h2>Dr. Braulio Apaza Coronel</h2> <br>
+                    <h4>COP 22084 <br>Registro de Especialista R.N.E. 1373</h4> <br>
+                    <p>
+                    Cirujano Dentista Especialista en Ortodoncia y Ortopedia Maxilar, con formación de posgrado en Lima y São Paulo, Brasil. Es Socio Fundador de <a href="https://iaofopro.com/">IAOFO</a> y de  la Asociación Cientifica de Ortodoncia y Ortopedia Maxilar. Además de su práctica profesional, el Dr. Apaza Coronel participa activamente en concursos de belleza como jurado y director.
+
+                    </p>
+                    </div>
+                    <div class="img-doctor" id="img-doctor">
+                        <img src="img/doctor-braulio-.png" alt="error">
+                    </div>
+            </div>
+            
+            
+        </section>
+
+        <!-- esta en pagina carrusel.css-->
+        <div class="contenedor-carrusel">
+            <div class="carrusel">
+                <div class="carrusel-1">
+
+                    <a href="../v2/ortodoncia/ortodoncia.html">
+                    <div class="caja">
+                        <img src="img/ortodoncia-14.png" alt="doctor 1">
+                        <div class="caja-contenido">
+                            <h1>Ortodoncia</h1>
+                        </div>
+                    </div>
+                    </a>
+
+                   <a href="../v2/ortopedia-maxilar/ortopedia-maxilar.html">
+                        <div class="caja">
+                            <img src="img/ortopedia-15.png" alt="doctor 1">
+                            <div class="caja-contenido">
+                                <h1>Ortopedia Funcional de los Maxilares</h1>
+                            </div>
+                        </div>
+                   </a>
+                    <a href="../v2/implantologia/implantologia.html">
+                        <div class="caja">
+                        <img src="img/implante3d-12.png" alt="doctor 1">
+                        <div class="caja-contenido">
+                            <h1>Implantologia 3D</h1>
+                            
+                        </div>
+                    </div>
+                    </a>
+                    
+                    <a href="periodoncia/periodoncia.html">
+
+                        <div class="caja">
+                        <img src="img-carrusel/PERIODONCIA.png" alt="doctor 1">
+                        <div class="caja-contenido">
+                            <h1>Periodoncia</h1>
+                            
+                        </div>
+                    </div>
+                    </a>
+                    
+                    <a href="cirugia-bucal-maxilofacial/cirugia-bucal.html"> 
+                        <div class="caja">
+                        <img src="img/cirujia bucal-11.png" alt="doctor 1">
+                        <div class="caja-contenido">
+                            <h1>Cirugía Bucal Maxilofacial</h1>
+                            
+                        </div>
+                    </div></a>
+                   
+                    <a href="odontopediatria/odontopediatria.html">
+                        <div class="caja">
+                        <img src="img/odontopediatria.png" alt="doctor 1">
+                        <div class="caja-contenido">
+                            <h1>Odontopediatría</h1>
+                            
+                        </div>
+                    </div>
+                    </a>
+                    
+                    <a href="disfuncion-mandibular/disfuncion-mandibular.html">
+                        <div class="caja">
+                        <img src="img-carrusel/DTM2.png" alt="doctor 1">
+                        <div class="caja-contenido">
+                            <h1>Disfunción Temporo Mandibular</h1>
+                            
+                        </div>
+                    </div>
+                    </a>
+                    
+                    <a href="orofacial/orofacial.html">
+                        <div class="caja">
+                        <img src="img-carrusel/OROFACIAL.png" alt="doctor 1">
+                        <div class="caja-contenido">
+                            <h1>Dolor Orofacial</h1>
+                            
+                        </div>
+                    </div> 
+                    </a>
+                    <a href="bruxismo/bruxismo.html">
+                        <div class="caja">
+                        <img src="img-carrusel/bruxismo.png" alt="doctor 1">
+                        <div class="caja-contenido">
+                            <h1>Bruxismo</h1>
+                            
+                        </div>
+                    </div>
+                    </a>
+                    <a href="rehabilitacion-oral/rehabilitacion-oral.html">
+                        <div class="caja">
+                        <img src="img-carrusel/rehab oral 2.png" alt="doctor 1">
+                        <div class="caja-contenido">
+                            <h1>Rehabilitacion Oral</h1>
+                            
+                        </div>
+                    </div>
+                    </a>
+                    <a href="endodoncia/endodoncia.html">
+                        <div class="caja">
+                        <img src="img-carrusel/endodoncia.png" alt="doctor 1">
+                        <div class="caja-contenido">
+                            <h1>Endodoncia</h1>
+                            
+                        </div>
+                    </div>
+                    </a>
+                    
+                    
+                    <a href="../v2/ortodoncia/ortodoncia.html">
+                    <div class="caja">
+                        <img src="img/ortodoncia-14.jpg" alt="doctor 1">
+                        <div class="caja-contenido">
+                            <h1>Ortodoncia</h1>
+                        </div>
+                    </div>
+                    </a>
+                   
+                    
+                </div>
+                <div class="controles">
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+        
+            <a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0" 
+                class="btn-wsp" target="_blank">
+                <span class="wsp-icon-img">
+                    <img src="iconos/whatsapp_logo.png" alt="WhatsApp" />
+                </span>
+                <div class="wsp-text">
+                    <strong>¿Tienes dudas?</strong><br>
+                    Escríbenos y agenda tu evaluación
+                </div>
+            </a>
+
+        <section class="contenedor-historia">
+            
+                 <div class="resumen-historia" id="resumen-historia">
+                <h2>HISTORIA DE ABDENT</h2>
+                <div class="parrafo-historia">
+                    <p>AB Dent nace en el año 2010 en la ciudad de Lima con el objetivo de mejorar las sonrisas de personas de todas las edades: infantes, niños, jóvenes y adultos. El centro está dirigido por el <strong>Dr. C.D. Braulio Darío Apaza Coronel</strong>, especialista en Ortodoncia y Ortopedia maxilar, junto a su esposa, la <strong>Dra. Betsy Torres Alvarado</strong>, especialista en Periodoncia e Implantologia. Desde el año 2015, AB Dent amplía sus servicios a la ciudad de Tacna, ofreciendo tecnología avanzada y tratamientos innovadores para mejorar la calidad de vida y la sonrisa de más personas. <br>AB Dent está siempre a la vanguardia con las capacitaciones nacionales e internacionales. <strong style="font-weight: 600;">Ofrecen las especialidades: Ortodoncia, Ortopedia Funcional de los Maxilares, Implantología 3D, Periodoncia, Cirugía Bucal Maxilofacial, Odontopediatría, Rehabilitación Oral, Disfunción Temporo Mandibular, Dolor Orofacial y Endodoncia.</strong></p>
+                </div>
+            
+                </div>
+                <div class="imagen-historia">
+                    <img src="img/doctorOA.png" alt="abdent">
+                </div>
+            
+           
+        </section>
+
+            <div class="titulo-sede"><h2>NUESTRAS SEDES</h2></div>
+        <section class="contenedor-sedes">
+            
+            <div class="sede">
+                    <div class="sedes">
+                            <div class="sede-dir">
+                            
+                            <p>Ubiquenos en nuestras sedes en: <br> <br>
+                                <address style="font-style: normal;">
+                                <strong>Tacna:</strong> Calle Geranios 30, Urb. Pescasserolli <br> <br>
+                                <strong>Lima:</strong> San Martín de Porres, Surco, San Borja
+                                </address>
+                                
+                            </p>
+                            </div>
+                            
+                    </div>
+                    <div class="sede-maps">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1897.188203039401!2d-70.23692122994001!3d-18.00772690863675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915ac5578595b95b%3A0x19e9f9a0520478ec!2sAB%20Dent!5e0!3m2!1ses!2spe!4v1749795963382!5m2!1ses!2spe" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                        
+            </div>   
+        </section>
+        <a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0" 
+                class="btn-wsp" target="_blank">
+                <span class="wsp-icon-img">
+                    <img src="iconos/whatsapp_logo.png" alt="WhatsApp" />
+                </span>
+                <div class="wsp-text">
+                    <strong>¿Tienes dudas?</strong><br>
+                    Escríbenos y agenda tu evaluación
+                </div>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0" class="whatsapp-icon"><img src="iconos/whatsapp_logo.png" alt="error"></a>
+    </main>
+    <footer>
+        <div class="raiz">
+            <div class="contenedor-footer">
+                <div class="icono-logo">
+                    <img src="ABDENT_BLANCO.png" alt="error" >
+                </div>
+                <div class="iconos-redes">
+                    <div class="icono1">
+                        <a href="https://www.facebook.com/ABDent.Braulio">
+                            
+                           <img src="iconos/Facebook.png" alt="error"  class="icono-img"> 
+                           
+                            ABDent Ortodoncia y Estética
+                        </a>
+                    </div>
+                   
+                    <div class="icono1"><a href="https://www.instagram.com/abdent.braulio/"><img src="iconos/Instagram.png" alt="error"  class="icono-img">@abdent.braulio</a></div>
+
+                    <div class="icono1"><a href="https://www.tiktok.com/@abdent.braulio"><img src="iconos/TikTok.png" alt="error"  class="icono-img">@abdent.braulio</a></div>
+
+                    <div class="icono1"><a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0"><img src="iconos/WhatsApp.png" alt="error" class="icono-img">+51 996 163 307</a></div>
+                    
+                    <div class="icono1">
+                    <a href="#">
+                        Políticas y Términos
+                    </a>
+                    
+                </div>
+                </div>
+                
+            </div>
+            <p class="derechos">&copy; 2025 AB Dent. Todos los derechos reservados.  </p>
+        </div>
+    </footer>
+   <script>
+    const slides = document.getElementById('slides');
+    const total = document.querySelectorAll('.slide').length;
+    const dotsContainer = document.getElementById('dots');
+    let index = 0;
+
+    function renderDots() {
+      dotsContainer.innerHTML = '';
+      for (let i = 0; i < total; i++) {
+        const dot = document.createElement('span');
+        dot.classList.add('dot');
+        if (i === index) dot.classList.add('active');
+        dot.addEventListener('click', () => showSlide(i));
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    function showSlide(i) {
+      index = (i + total) % total;
+      slides.style.transform = `translateX(-${index * 100}vw)`;
+      renderDots();
+    }
+
+    function nextSlide() {
+      showSlide(index + 1);
+    }
+
+    function prevSlide() {
+      showSlide(index - 1);
+    }
+
+    setInterval(nextSlide, 8000);
+    renderDots();
+  </script>
+
+<script>
+  let carruselIndex = 0; // <--- Renombrado
+  function moveSlide(step) {
+    const carrusel = document.querySelector('.carrusel-1');
+    const caja = document.querySelectorAll('.caja');
+    const visibleSlides = Math.floor(document.querySelector('.carrusel').offsetWidth / 165);
+    const maxIndex = caja.length - visibleSlides;
+
+    carruselIndex = Math.max(0, Math.min(carruselIndex + step, maxIndex));
+
+    
+
+    carrusel.style.transform = `translateX(${-carruselIndex * 209}px)`; //165 , 207movimiento del carrusel
+  }
+</script>
+
+
+<script>
+    //para que este quieto la pagina cuando haga  scroll
+     //para que este quieto la pagina cuando haga  scroll
+  function toggleMenu() {
+    const menu = document.getElementById("menuMovil");
+    const overlay = document.getElementById("overlay");
+    const isActive = menu.classList.toggle("active");
+    overlay.classList.toggle("active");
+
+    if (isActive) {
+      document.body.classList.add("bloqueado");
+    } else {
+      document.body.classList.remove("bloqueado");
+    }
+  }
+
+  function closeMenu() {
+    document.getElementById("menuMovil").classList.remove("active");
+    document.getElementById("overlay").classList.remove("active");
+    document.body.classList.remove("bloqueado");
+  }
+
+  function toggleSubmenu() {
+    document.getElementById("submenu").classList.toggle("active");
+
+    
+  }
+
+   //para que este quieto la pagina cuando haga  scroll
+    //para que este quieto la pagina cuando haga  scroll
+</script>
+
+<script>
+  const counters = document.querySelectorAll('.counter');
+  let hasAnimated = false;
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+
+      // Diferente incremento según el target
+      let increment;
+      if (target >= 1000) {
+        increment = target / 100; // más rápido
+      } else if (target >= 20) {
+        increment = target / 200;
+      } else {
+        increment = target / 300; // más lento
+      }
+
+      const updateCount = () => {
+        const current = +counter.innerText;
+        if (current < target) {
+          counter.innerText = Math.ceil(current + increment);
+          setTimeout(updateCount, 50); // velocidad general
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCount();
+    });
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !hasAnimated) {
+        animateCounters();
+        hasAnimated = true;
+        observer.disconnect();
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  counters.forEach(counter => observer.observe(counter));
+</script>
+                
+    <script src="https://kit.fontawesome.com/01ddb5cacc.js" crossorigin="anonymous"></script>
+    <!-- barra principal cambiar de color blanco a negro claro -->
+    <script src="barra.js"></script>
+
+    <!-- transicion de las letras derecha o izquierda -->
+    <script src="transicion.js"></script>
+
+    <!-- carga de logo en la pagina-->
+     <script src="cargaPagina.js"></script>
+
+   
+   
+</body>
+</html>

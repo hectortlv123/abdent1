@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="icon" href="../iconos/abdent icono.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Serif+Text:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gabarito:wght@400..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="preloader">
+        <img src="../LOGO_ABDENT.png" alt="Logo de la clínica">
+    </div>
+    <header>
+        <nav class="barra-navegacion">
+            <div class="contenedor-nav" id="contenedor-nav">
+
+                <div class="contenedor-img-android">
+                        <button class="menu-toggle" onclick="toggleMenu()">
+                        <i class="fa-solid fa-grip-lines"></i>
+                    </button>
+                    <div class="logo-celular">
+                        <img src="../ABDENT_BLANCO.png" alt="logo-blanco">
+                    </div>
+                </div>
+
+                <a href="../index.html">Inicio</a>
+                
+                <div class="menu">
+                    <a href="#" class="especialidades">Especialidades</a>
+                    <div class="menu-item">
+
+                        
+                        <a href="../ortodoncia/ortodoncia.html">Ortodoncia</a>
+                        <a href="../ortopedia-maxilar/ortopedia-maxilar.html">Ortopedia funcional de los Maxilares</a>
+                        <a href="../implantologia/implantologia.html">Implantologia</a>
+                        <a href="../periodoncia/periodoncia.html">Periodoncia</a>
+                        <a href="../cirugia-bucal-maxilofacial/cirugia-bucal.html">Cirugía Bucal Maxilofacial</a>
+                        <a href="../odontopediatria/odontopediatria.html">Odontopediatría</a>
+                        <a href="../disfuncion-mandibular/disfuncion-mandibular.html">Disfunción Temporo Mandibular</a>
+                        <a href="../orofacial/orofacial.html">Dolor Orofacial</a>
+                        <a href="../bruxismo/bruxismo.html">Bruxismo</a>
+                        <a href="../rehabilitacion-oral/rehabilitacion-oral.html">Rehabilitación Oral</a>
+                        <a href="../endodoncia/endodoncia.html">Endodoncia</a>
+                    </div>
+                </div>
+            <a href="../blog/blog1/blog1.html">Blog</a>
+                <a class="logo">
+                    <img src="../ABDENT_BLANCO.png" alt="">
+                </a>
+                
+                <a href="contacto.html">Contacto</a>
+
+                <div class="iconos-redes1">
+                    <a href="https://www.facebook.com/ABDent.Braulio"><img src="../../v2/iconos/Facebook.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://www.instagram.com/abdent.braulio/"><img src="../../v2/iconos/Instagram.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://www.tiktok.com/@abdent.braulio"><img src="../../v2/iconos/TikTok.png" alt="error" style="height: 20px;"></a> <br>
+                    <a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0"><img src="../../v2/iconos/WhatsApp.png" alt="error"style="height: 20px;"></a>
+                    
+                </div>
+            </div>
+        
+           
+                    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+                    <!-- Menú móvil lateral -->
+                    <nav class="menu-movil" id="menuMovil">
+                        <button class="close-menu" onclick="closeMenu()">
+                        <i class="fa-solid fa-x"></i>
+                        
+                        </button>
+                    
+                        <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li>
+                            <button onclick="toggleSubmenu()">Especialidades</button>
+                            <ul class="submenu" id="submenu">
+                                    <li><a href="../ortodoncia/ortodoncia.html">Ortodoncia</a></li>
+                                    <li><a href="../ortopedia-maxilar/ortopedia-maxilar.html">Ortopedia funcional de los Maxilares</a></li>
+                                    <li><a href="../implantologia/implantologia.html">Implantología 3D</a></li>
+                                    <li><a href="../periodoncia/periodoncia.html">Periodoncia</a></li>
+                                    <li><a href="../cirugia-bucal-maxilofacial/cirugia-bucal.html">Cirugía Bucal Maxilofacial</a></li>
+                                    <li><a href="../odontopediatria/odontopediatria.html">Odontopediatria
+                                    <li><a href="../disfuncion-mandibular/disfuncion-mandibular.html">Disfuncion Temporo Mandibular</a></li>
+                                    <li><a href="../orofacial/orofacial.html">Dolor Orofacial</a></li>                
+                                    <li><a href="../bruxismo/bruxismo.html">Bruxismo</a></li>
+                                    <li><a href="../rehabilitacion-oral/rehabilitacion-oral.html">Rehabilitacion oral</a></li>
+                                    <li><a href="../endodoncia/endodoncia.html">Endodoncia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../blog/blog1/blog1.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+        </nav>
+            
+        </nav>
+        <main>
+            <div class="contenedor-main">
+                    <div class="contenedor-contacto">
+                    
+                    <div class="texto">
+                        <div class="contenedor-texto">
+                            <h2 id="titulo">¿Tienes alguna duda?</h2>
+                             <p id="parrafo">Si necesitas más información, completa el siguiente formulario con tus datos. Estaremos encantados de ayudarte y nos pondremos en contacto contigo lo antes posible.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="contenedor-registrar">
+                        <div class="container">
+                            <h2>Solicitar Cita</h2>
+                            <input type="text" id="nombre" placeholder="Nombres y apellidos" required>
+                            <input type="tel" id="celular" placeholder="Celular" required>
+                            <select id="servicio">
+                            <option value="">Servicio de su Interés</option>
+                            <option value="Blanqueamiento dental">Blanqueamiento dental</option>
+                            <option value="Ortodoncia">Ortodoncia(Brackets, alineadores)</option>
+                            <option value="Implantes">Implantes</option>
+                            <option value="Endodoncia">Endodoncia</option>
+                            <option value="Odontopediatria">Odontopediatria</option>
+                            <option value="Rehabilitacion Oral">Rehabilitacion Oral</option>
+                            <option value="Cirugia Bucal Maxilofacial">Cirugia Bucal Maxilofacial</option>
+                            <option value="Otro">Otro</option>
+                            </select>
+                            <select type="text" name="lugar" id="lugar">
+                                <option value="">Sede</option>
+                                <option value="Tacna">Tacna</option>
+                                <option value="Lima">Lima</option>
+                            </select>
+                            <textarea id="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
+                            <button onclick="enviarWhatsApp()">Agendar cita</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+      
+        
+        
+        </main>
+        <footer>
+            <div class="raiz">
+            <div class="contenedor-footer">
+                <div class="icono-logo">
+                    <img src="../ABDENT_BLANCO.png" alt="error" >
+                </div>
+                <div class="iconos-redes">
+                    <div class="icono1">
+                        <a href="https://www.facebook.com/ABDent.Braulio">
+                            
+                           <img src="../iconos/Facebook.png" alt="error"  class="icono-img"> 
+                           
+                            ABDent Ortodoncia y Estética
+                        </a>
+                    </div>
+                   
+                    <div class="icono1"><a href="https://www.instagram.com/abdent.braulio/"><img src="../iconos/Instagram.png" alt="error"  class="icono-img">@abdent.braulio</a></div>
+
+                    <div class="icono1"><a href="https://www.tiktok.com/@abdent.braulio"><img src="../iconos/TikTok.png" alt="error"  class="icono-img">@abdent.braulio</a></div>
+
+                    <div class="icono1"><a href="https://api.whatsapp.com/send/?phone=51996163307&text&type=phone_number&app_absent=0"><img src="../iconos/WhatsApp.png" alt="error" class="icono-img">+51 996 163 307</a></div>
+                    
+                    <div class="icono1">
+                    <a href="#">
+                        Políticas y Términos
+                    </a>
+                    
+                </div>
+                </div>
+                
+            </div>
+            <p class="derechos">&copy; 2025 AB Dent. Todos los derechos reservados.  </p>
+        </div>
+        </footer>
+
+        <script>
+            function toggleMenu() {
+            document.getElementById("menuMovil").classList.toggle("active");
+            document.getElementById("overlay").classList.toggle("active");
+            }
+
+            function closeMenu() {
+            document.getElementById("menuMovil").classList.remove("active");
+            document.getElementById("overlay").classList.remove("active");
+            }
+
+            function toggleSubmenu() {
+            document.getElementById("submenu").classList.toggle("active");
+            }
+        </script>
+
+
+
+        <script>
+    //para que este quieto la pagina cuando haga  scroll
+     //para que este quieto la pagina cuando haga  scroll
+  function toggleMenu() {
+    const menu = document.getElementById("menuMovil");
+    const overlay = document.getElementById("overlay");
+    const isActive = menu.classList.toggle("active");
+    overlay.classList.toggle("active");
+
+    if (isActive) {
+      document.body.classList.add("bloqueado");
+    } else {
+      document.body.classList.remove("bloqueado");
+    }
+  }
+
+  function closeMenu() {
+    document.getElementById("menuMovil").classList.remove("active");
+    document.getElementById("overlay").classList.remove("active");
+    document.body.classList.remove("bloqueado");
+  }
+
+  function toggleSubmenu() {
+    document.getElementById("submenu").classList.toggle("active");
+
+    
+  }
+
+   //para que este quieto la pagina cuando haga  scroll
+    //para que este quieto la pagina cuando haga  scroll
+</script>
+
+
+        <script src="https://kit.fontawesome.com/01ddb5cacc.js" crossorigin="anonymous"></script>
+        <script src="../wasap.js"></script>
+        <script src="../cargaPagina.js"></script>
+        <script src="transicion-contacto.js"></script>
+</body>
+</html>
