@@ -622,20 +622,7 @@
      /* lema principal */
     
     
-    /*TRANSICION DE LAS LETRAS*/
-    .contenedor-nav.show, /*barra DE NAVEGACION*/
-    .header-lema h2.show, /*LEMA 1*/
-.header-lema h4.show,    /*LEMA 2*/
-#contenedor-contacto.show,
-#resumen-perfil.show,
-#img-doctor.show,
-#resumen-historia.show,
-.titulo-sede.show,
-.sede-dir.show 
-{
-  opacity: 1;
-  transform: translateY(0) translateX(0);
-}
+ 
         
     .perfil-doctor{
             display: flex;
@@ -1232,7 +1219,20 @@
 }
 
 
-
+   /*TRANSICION DE LAS LETRAS*/
+    .contenedor-nav.show, /*barra DE NAVEGACION*/
+    .header-lema h2.show, /*LEMA 1*/
+.header-lema h4.show,    /*LEMA 2*/
+#contenedor-contacto.show,
+#resumen-perfil.show,
+#img-doctor.show,
+#resumen-historia.show,
+.titulo-sede.show,
+.sede-dir.show 
+{
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
 
 
 
